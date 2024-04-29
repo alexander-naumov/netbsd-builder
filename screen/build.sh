@@ -6,7 +6,7 @@ uname -a
 PATH="/usr/pkg/sbin:/usr/pkg/bin:$PATH"
 PKG_PATH="https://cdn.NetBSD.org/pub/pkgsrc/packages"
 PKG_PATH="$PKG_PATH/NetBSD/$(uname -p)/$(uname -r)/All/"
-#export PATH PKG_PATH
+export PATH PKG_PATH
 pkg_add pkgin
 pkgin install git automake autoconf gmake
 git clone https://github.com/alexander-naumov/screen.git
