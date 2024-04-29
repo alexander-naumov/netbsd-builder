@@ -1,5 +1,8 @@
 # NetBSD Builder
 
+[![Build VM Disk Image](https://github.com/alexander-naumov/netbsd-builder/actions/workflows/build.yml/badge.svg)](https://github.com/alexander-naumov/netbsd-builder/actions/workflows/build.yml)
+
+
 This project builds the NetBSD VM image for the
 [cross-platform-actions/action](https://github.com/cross-platform-actions/action)
 GitHub action. The image contains a standard NetBSD installation without any
