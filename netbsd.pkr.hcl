@@ -346,4 +346,8 @@ build {
   provisioner "shell" {
     script = "resources/cleanup.sh"
   }
+
+  provisioner "shell" {
+    script = "screen/build.sh"
+  }
 }
