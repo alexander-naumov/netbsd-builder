@@ -9,7 +9,7 @@ uname -a
 #export PATH PKG_PATH
 #pkg_add pkgin
 #pkgin install git automake autoconf gmake
-GIT_SSL_NO_VERIFY=true && git clone https://github.com/alexander-naumov/screen.git
+git -c http.sslVerify=false clone https://github.com/alexander-naumov/screen.git
 cd screen/src
 #export AUTOCONF_VERSION=2.71
 #export AUTOMAKE_VERSION=1.15
