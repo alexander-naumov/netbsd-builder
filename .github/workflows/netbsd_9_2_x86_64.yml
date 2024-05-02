@@ -20,26 +20,10 @@ jobs:
         matrix:
           version:
             - 9.2
-            - 9.3
-            - '10.0'
 
           architecture:
             - name: x86-64
               qemu: x86_64
-
-            - name: arm64
-              qemu: aarch64
-
-          exclude:
-            - version: 9.2
-              architecture:
-                name: arm64
-                qemu: aarch64
-
-            - version: 9.3
-              architecture:
-                name: arm64
-                qemu: aarch64
 
     steps:
       - name: Clone Repository
