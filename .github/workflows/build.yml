@@ -1,4 +1,4 @@
-name: Build VM Disk Image
+name: NetBSD
 
 env:
   PACKER_VERSION: '1.8.4'
@@ -48,15 +48,11 @@ jobs:
           persist-credentials: false
 
       - name: Install Dependencies
-        # run: sudo apt update && sudo apt install curl unzip "qemu-system-${{ matrix.architecture.qemu }}" -y
         run: apk add --no-cache qemu-img "qemu-system-${{ matrix.architecture.qemu }}"
 
       - uses: hashicorp/setup-packer@main
         with:
           version: ${{ env.PACKER_VERSION }}
-
-      # - name: Setup tmate session
-      #   uses: mxschmitt/action-tmate@v3
 
       - name: Build Image
         run: |
